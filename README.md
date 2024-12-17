@@ -1,7 +1,7 @@
 # RiemannSurfaces
 **Mathematica visualisation of Riemann surfaces**
 
-This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. The method is illustrated on the Riemann surface of the inverse of $\sinh(z)/z$ which is described in [Nandori, Pirjol (2020)](https://arxiv.org/abs/2209.09412)
+This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. The method is illustrated on the Riemann surface of the inverse of $\sinh(z)/z$ which is described in Section 3 of [Nandori, Pirjol (2022)](https://arxiv.org/abs/2209.09412), also [published version](https://www.sciencedirect.com/science/article/pii/S0377042721004404). 
 
 The code plots the Riemann surface of $z(x)$ where $x = \frac{\sinh z}{z}$. More precisely, the code plots $Re(z^2)$ vs $(Re[x],Im[x])$. Denote $x=u+i v$.
 
