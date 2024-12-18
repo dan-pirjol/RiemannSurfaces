@@ -3,6 +3,8 @@
 
 This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. The method is illustrated on the Riemann surface of the inverse of $\sinh(z)/z$ which is described in Section 3 of [Nandori, Pirjol (2022)](https://arxiv.org/abs/2209.09412), also [published version](https://www.sciencedirect.com/science/article/pii/S0377042721004404). 
 
+Denote $f(z) = \frac{\sinh z}{z}$. The inverse of this function is $f^{-1}(x)$, which satisfies $f(f^{-1}(x))=x$. The inverse function $f^{-1}(x)$ is multivalued, and has an infinite number of Riemann sheets, connected at a sequence of branch cuts. The structure of the Riemann sheets is similar to that of an infinite staircase, where one descends to the lower level by crossing a branch cut. This patters is visible in the plots below.
+
 The code plots the Riemann surface of $z(x)$ where $x = \frac{\sinh z}{z}$. More precisely, the code plots $Re(z^2)$ vs $(Re[x],Im[x])$. Denote $x=u+i v$.
 
 The attached Mathematica code and the resulting evaluations are shown below. The plots take a large amount of memory (500MB) and GitHub does not allow such large files. Therefore I attach the plots as images below. The plots show the same Riemann surface over different regions in $[Re[x],Im[x])$.
