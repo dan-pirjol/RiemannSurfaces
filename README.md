@@ -3,7 +3,11 @@
 
 This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. The method is illustrated on the Riemann surface of the inverse of $\sinh(z)/z$ which is described in Section 3 of [Nandori, Pirjol (2022)](https://arxiv.org/abs/2209.09412), also [published version](https://www.sciencedirect.com/science/article/pii/S0377042721004404). 
 
-Denote $f(z) = \frac{\sinh z}{z}$. The inverse of this function is $f^{-1}(x)$, which satisfies $f(f^{-1}(x))=x$. The inverse function $f^{-1}(x)$ is multivalued, and has an infinite number of Riemann sheets, connected at a sequence of branch cuts. The structure of the Riemann sheets is similar to that of an infinite staircase, where one descends to the lower level by crossing a branch cut. This patters is visible in the plots below.
+Denote $f(z) = \frac{\sinh z}{z}$. Denote $f^{-1}(u)$ the inverse of this function. The inverse function $f^{-1}(x)$ is multivalued. For example, the equation $f(z)=1$ has an infinite number of complex solutions in addition to $z=0$ (which gives $f^{-1}(1)=\{ 0, \cdots \}$). This means that $f^{-1}(u)$ has an infinite number of Riemann sheets. On the "principal" sheet we have $f^{-1}(1)=0$. 
+
+The function $f^{-1}(u)$ has branch points $( u_j )_{j\geq 1}$ on the real axis, in the $[-1,+1]$ interval. These points are given by $u_j = \cos \omega_j$ where $\omega_j$ solve $\tan \omega_j = \omega_j$. The first few branch points are $u_i=(-0.2172, +0.1284, -0.0913,\cdots)$. The closest branch point to $u=1$ on the principal Riemann sheet is at $u_1=-0.2172$.
+
+The Riemann sheets are joined at branch cuts, which can be chosen as curves $(u_j, u_{j+1})$, joining two consecutive branch points. The structure of the Riemann sheets is similar to that of an infinite staircase, where one descends to the lower level by crossing a branch cut. This pattern is visible in the plots below.
 
 The code plots the Riemann surface of $z(x)$ where $x = \frac{\sinh z}{z}$. More precisely, the code plots $Re(z^2)$ vs $(Re[x],Im[x])$. Denote $x=u+i v$.
 
