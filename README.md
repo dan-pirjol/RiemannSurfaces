@@ -1,7 +1,17 @@
 # RiemannSurfaces
 **Mathematica visualisation of Riemann surfaces**
 
-This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. The method is illustrated on the Riemann surface of the inverse of $\sinh(z)/z$ which is described in Section 3 of [Nandori, Pirjol (2022)](https://arxiv.org/abs/2209.09412), also [published version](https://www.sciencedirect.com/science/article/pii/S0377042721004404). 
+This repository describes a simple method for visualisation of Riemann surfaces in Mathematica using **ParametricPlot3D**. 
+
+**The Riemann surface of $\sqrt{z}$**
+
+As a first example, consider the Riemann surface of $\sqrt{z}$ which has two sheets, joined along a branch cut starting at $z=0$. The example below chooses the branch cut along the negative real axis.
+
+<img width="839" alt="SqrtRiemannSurface" src="https://github.com/user-attachments/assets/68920035-e3d2-411f-8935-fd6a17252765" />
+
+**The Riemann surface of the inverse of $\frac{\sinh z}{z}$**
+
+The Riemann surface of the inverse of $\sinh(z)/z$ is more complicated. This was described in Section 3 of [Nandori, Pirjol (2022)](https://arxiv.org/abs/2209.09412), also [published version](https://www.sciencedirect.com/science/article/pii/S0377042721004404). 
 
 Denote $f(z) = \frac{\sinh z}{z}$. Denote $f^{-1}(u)$ the inverse of this function. The inverse function $f^{-1}(x)$ is multivalued. For example, the equation $f(z)=1$ has an infinite number of complex solutions in addition to $z=0$ (which gives $f^{-1}(1)=\{ 0, \cdots \}$). This means that $f^{-1}(u)$ has an infinite number of Riemann sheets. On the "principal" sheet we have $f^{-1}(1)=0$. 
 
